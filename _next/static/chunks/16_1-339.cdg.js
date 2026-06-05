@@ -1,0 +1,210 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["object" == typeof document ? document.currentScript : void 0, 4392, e => {
+    "use strict";
+    let t = null,
+        r = () => (t || (t = e.A(67828).then(e => e.default)), t);
+    e.s(["clarityEvent", 0, e => {
+        r().then(t => t.event(e)).catch(() => {})
+    }, "clarityTag", 0, (e, t) => {
+        r().then(r => r.setTag(e, String(t))).catch(() => {})
+    }])
+}, 26288, e => {
+    "use strict";
+    let t = "user_limits",
+        r = "user_limits_updated",
+        s = "pending_prompt",
+        n = {
+            setLimits: e => {
+                try {
+                    localStorage.setItem(t, JSON.stringify(e)), window.dispatchEvent(new CustomEvent(r))
+                } catch (e) {}
+            },
+            getLimits: () => {
+                try {
+                    let e = localStorage.getItem(t);
+                    if (!e) return null;
+                    return JSON.parse(e)
+                } catch (e) {
+                    return null
+                }
+            },
+            clearLimits: () => {
+                try {
+                    localStorage.removeItem(t), window.dispatchEvent(new CustomEvent(r))
+                } catch (e) {}
+            },
+            updateLimits: e => {
+                let t = n.getLimits();
+                t && n.setLimits({ ...t,
+                    ...e
+                })
+            },
+            setPendingPrompt: e => {
+                try {
+                    sessionStorage.setItem(s, e)
+                } catch (e) {}
+            },
+            getPendingPrompt: () => {
+                try {
+                    return sessionStorage.getItem(s)
+                } catch (e) {
+                    return null
+                }
+            },
+            clearPendingPrompt: () => {
+                try {
+                    sessionStorage.removeItem(s)
+                } catch (e) {}
+            },
+            LIMITS_UPDATE_EVENT: r
+        };
+    e.s(["sessionStorageUtils", 0, n])
+}, 92037, e => {
+    "use strict";
+    var t = e.i(68834),
+        r = e.i(79473);
+    let s = (0, t.create)()((0, r.devtools)((e, t) => ({
+        user: null,
+        isLoading: !1,
+        error: null,
+        setUser: t => e({
+            user: t,
+            error: null
+        }),
+        setLoading: t => e({
+            isLoading: t
+        }),
+        setError: t => e({
+            error: t
+        }),
+        clearUser: () => e({
+            user: null,
+            error: null
+        }),
+        fetchUser: async e => {
+            let {
+                setLoading: r,
+                setUser: s,
+                setError: n
+            } = t();
+            r(!0), n(null);
+            try {
+                let t = await e();
+                if (!t) throw Error("Token not found");
+                let r = await fetch("https://api.webild.io/users/me", {
+                    method: "GET",
+                    headers: {
+                        Accept: "application/json",
+                        Authorization: `Bearer ${t}`
+                    }
+                });
+                if (!r.ok) throw Error(`Error status: ${r.status}`);
+                let n = await r.json();
+                s(n)
+            } catch (e) {
+                n(e instanceof Error ? e.message : "Unknown error")
+            } finally {
+                r(!1)
+            }
+        }
+    }), {
+        name: "user-store"
+    }));
+    e.s(["useUserStore", 0, s])
+}, 664, e => {
+    "use strict";
+    var t = e.i(68834),
+        r = e.i(79473);
+    let s = "webild-cookie-consent",
+        n = (0, t.create)()((0, r.devtools)(e => ({
+            consentStatus: "pending",
+            hasLoaded: !1,
+            loadConsent: () => {
+                let t = localStorage.getItem(s);
+                "accepted" === t || "declined" === t ? e({
+                    consentStatus: t,
+                    hasLoaded: !0
+                }) : e({
+                    hasLoaded: !0
+                })
+            },
+            acceptCookies: () => {
+                localStorage.setItem(s, "accepted"), e({
+                    consentStatus: "accepted"
+                })
+            },
+            declineCookies: () => {
+                localStorage.setItem(s, "declined"), e({
+                    consentStatus: "declined"
+                })
+            }
+        }), {
+            name: "cookie-consent-store"
+        }));
+    e.s(["useCookieConsentStore", 0, n])
+}, 20386, e => {
+    "use strict";
+    e.i(47167);
+    var t = e.i(932),
+        r = e.i(71645),
+        s = e.i(27085),
+        n = e.i(664),
+        o = e.i(92037),
+        i = e.i(4392),
+        a = e.i(26288);
+    let l = null,
+        c = () => (l || (l = e.A(67828).then(e => e.default)), l);
+
+    function u(e) {
+        return e.user
+    }
+
+    function d(e) {
+        return e.consentStatus
+    }
+
+    function g(e) {
+        return e.hasLoaded
+    }
+
+    function m(e) {
+        return e.loadConsent
+    }
+    e.s(["default", 0, () => ((() => {
+        let e, l, h, f, p, S, v = (0, t.c)(13),
+            {
+                user: y
+            } = (0, s.useUser)(),
+            C = (0, o.useUserStore)(u),
+            w = (0, n.useCookieConsentStore)(d),
+            k = (0, n.useCookieConsentStore)(g),
+            E = (0, n.useCookieConsentStore)(m),
+            L = (0, r.useRef)(!1),
+            [U, T] = (0, r.useState)(!1);
+        v[0] !== E ? (e = () => {
+            E()
+        }, l = [E], v[0] = E, v[1] = e, v[2] = l) : (e = v[1], l = v[2]), (0, r.useEffect)(e, l), v[3] !== w || v[4] !== k || v[5] !== U ? (h = () => {
+            if (!k || "accepted" !== w || U) return;
+            let e = !1;
+            return c().then(t => {
+                e || (t.init("vpkxdgwdfa"), t.consentV2({
+                    ad_Storage: "granted",
+                    analytics_Storage: "granted"
+                }), T(!0))
+            }), () => {
+                e = !0
+            }
+        }, f = [w, k, U], v[3] = w, v[4] = k, v[5] = U, v[6] = h, v[7] = f) : (h = v[6], f = v[7]), (0, r.useEffect)(h, f), v[8] !== U || v[9] !== C || v[10] !== y ? (p = () => {
+            if (!U || !y || !C || L.current) return;
+            let e = y.firstName || y.username || y.emailAddresses[0] ? .emailAddress;
+            c().then(t => {
+                t.identify(C.id, void 0, void 0, e), (0, i.clarityTag)("clerk_id", y.id);
+                let r = a.sessionStorageUtils.getLimits();
+                r ? .plan && (0, i.clarityTag)("user_plan", r.plan), L.current = !0
+            })
+        }, S = [y, C, U], v[8] = U, v[9] = C, v[10] = y, v[11] = p, v[12] = S) : (p = v[11], S = v[12]), (0, r.useEffect)(p, S)
+    })(), null)], 20386)
+}, 36922, e => {
+    e.n(e.i(20386))
+}, 67828, e => {
+    e.v(t => Promise.all(["static/chunks/0.uc_q6tt3ufn.js"].map(t => e.l(t))).then(() => t(89786)))
+}]);
