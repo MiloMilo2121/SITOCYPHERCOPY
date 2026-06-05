@@ -1,0 +1,867 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["object" == typeof document ? document.currentScript : void 0, 75254, e => {
+    "use strict";
+    var t = e.i(71645);
+    let i = e => {
+            let t = e.replace(/^([A-Z])|[\s-_]+(\w)/g, (e, t, i) => i ? i.toUpperCase() : t.toLowerCase());
+            return t.charAt(0).toUpperCase() + t.slice(1)
+        },
+        a = (...e) => e.filter((e, t, i) => !!e && "" !== e.trim() && i.indexOf(e) === t).join(" ").trim();
+    var o = {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: 2,
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+    };
+    let n = (0, t.forwardRef)(({
+        color: e = "currentColor",
+        size: i = 24,
+        strokeWidth: n = 2,
+        absoluteStrokeWidth: s,
+        className: r = "",
+        children: l,
+        iconNode: c,
+        ...d
+    }, u) => (0, t.createElement)("svg", {
+        ref: u,
+        ...o,
+        width: i,
+        height: i,
+        stroke: e,
+        strokeWidth: s ? 24 * Number(n) / Number(i) : n,
+        className: a("lucide", r),
+        ...!l && !(e => {
+            for (let t in e)
+                if (t.startsWith("aria-") || "role" === t || "title" === t) return !0
+        })(d) && {
+            "aria-hidden": "true"
+        },
+        ...d
+    }, [...c.map(([e, i]) => (0, t.createElement)(e, i)), ...Array.isArray(l) ? l : [l]]));
+    e.s(["default", 0, (e, o) => {
+        let s = (0, t.forwardRef)(({
+            className: s,
+            ...r
+        }, l) => (0, t.createElement)(n, {
+            ref: l,
+            iconNode: o,
+            className: a(`lucide-${i(e).replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase()}`, `lucide-${e}`, s),
+            ...r
+        }));
+        return s.displayName = i(e), s
+    }], 75254)
+}, 31278, e => {
+    "use strict";
+    let t = (0, e.i(75254).default)("loader-circle", [
+        ["path", {
+            d: "M21 12a9 9 0 1 1-6.219-8.56",
+            key: "13zald"
+        }]
+    ]);
+    e.s(["Loader2", 0, t], 31278)
+}, 21742, e => {
+    "use strict";
+    var t = e.i(43476),
+        i = e.i(71645),
+        a = e.i(31278),
+        o = e.i(75157);
+    let n = (0, i.forwardRef)(({
+        children: e,
+        className: i,
+        styleClassName: n = "button-secondary",
+        gradientRoundedClassName: s,
+        type: r = "button",
+        onClick: l,
+        onMouseEnter: c,
+        disabled: d = !1,
+        isLoading: u = !1,
+        loadingText: m
+    }, p) => (0, t.jsx)("button", {
+        ref: p,
+        type: r,
+        disabled: d || u,
+        onMouseEnter: c,
+        className: (0, o.cls)("button text-sm font-medium outline-none focus:outline-none focus-visible:outline-none transition-all duration-200", s, n, i, (d || u) && "opacity-50 select-none pointer-events-none"),
+        onClick: l,
+        children: u ? (0, t.jsxs)("span", {
+            className: "flex items-center justify-center gap-2",
+            children: [(0, t.jsx)(a.Loader2, {
+                className: "h-[1em] w-auto animate-spin"
+            }), m ? ? e]
+        }) : e
+    }));
+    n.displayName = "Button", e.s(["default", 0, n])
+}, 62788, e => {
+    "use strict";
+    e.s(["COMMON_STRINGS", 0, {
+        buttons: {
+            SAVE: "Save",
+            DELETE: "Delete",
+            EDIT: "Edit",
+            UPGRADE_PLAN: "Upgrade Plan",
+            SETTINGS: "Settings",
+            SIGN_OUT: "Sign out"
+        },
+        labels: {
+            DOCUMENTATION: "Documentation",
+            PRICING: "Pricing"
+        },
+        placeholders: {
+            SEARCH: "Search"
+        },
+        images: {
+            LOGO_ALT: "Logo"
+        },
+        defaults: {
+            PROJECT_NAME: "Webild Project"
+        }
+    }])
+}, 75980, e => {
+    "use strict";
+    let t = {
+        modals: {
+            maintenance: {
+                title: "We're making a quick adjustment on our end.",
+                description: "One of our partners is temporarily unavailable. Please try again in a moment.",
+                imageAlt: "Maintenance"
+            },
+            paymentSuccess: {
+                subscription: {
+                    title: "Subscription Activated!",
+                    description: "Your subscription has been successfully activated. You can now enjoy all the benefits of your plan."
+                },
+                credits: {
+                    title: "Credits Purchased!",
+                    description: "Your credits have been successfully added to your account. Start creating amazing projects!"
+                },
+                continueButton: "Continue"
+            },
+            paymentCancel: {
+                title: "Payment Cancelled",
+                description: "Your payment was cancelled. No charges were made to your account. You can try again anytime.",
+                continueButton: "Continue"
+            },
+            insufficientCredits: {
+                title: "Insufficient Credits",
+                subtitle: e => `You need more credits to ${e}`,
+                required: "Required",
+                available: "Available"
+            },
+            outOfCredits: {
+                title: "You've ran out of generation credits!",
+                description: "Upgrade your AI plan to keep building pages, generating sections, and getting real-time suggestions without limits.",
+                imageAlt: "Additional credits"
+            },
+            confirmation: {
+                cancelButton: "Cancel",
+                confirmButton: "Confirm"
+            },
+            dragDrop: {
+                title: "Add files",
+                description: "Drop any files here to add them to your message"
+            }
+        },
+        tooltips: {
+            upgrade: {
+                title: "ONLY $16 to unlock Premium Features",
+                benefits: ["Get 60 NEW AI credits monthly", "Remove Webild watermark from your site", "Free Secure Hosting"],
+                upgradeNow: "Upgrade Now",
+                comparePlans: "Compare Plans"
+            }
+        },
+        errors: {
+            route: {
+                title: "Oops. Something went wrong",
+                description: "Looks like that didn't go through. Please try again.",
+                tryAgain: "Try Again",
+                goHome: "Go Home"
+            },
+            screenshot: {
+                unpublished: "Publish to view preview",
+                noPreview: "No Preview available"
+            }
+        },
+        notifications: {
+            cookie: {
+                title: "Cookie preferences",
+                description: "We use cookies to analyze how you use our site and improve your experience.",
+                learnMore: "Learn more about our cookie policy",
+                decline: "Decline",
+                accept: "Accept"
+            },
+            creditWarning: {
+                outOfCredits: "Out of Credits",
+                lowOnCredits: "Low on Credits",
+                left: "left",
+                clickToUpgrade: "Click to upgrade your plan",
+                featuresDisabled: "Some features are disabled",
+                cantUse: e => `Can't use: ${e}`
+            },
+            maintenance: {
+                title: "Maintenance Mode",
+                description: "Some features are temporarily unavailable",
+                learnMore: "Learn More"
+            }
+        },
+        input: {
+            outOfCredits: "Out of credits. Upgrade to continue.",
+            enhanceButton: "Enhance prompt",
+            placeholders: {
+                enhancing: "Enhancing your prompt",
+                listening: "Listening...",
+                projectPage: "Ask Webild...",
+                homePage: "Make me a clean apple like website for my ai startup"
+            },
+            errors: {
+                enhanceFailed: "Failed to enhance prompt. Please try again.",
+                requestProcessing: "Please wait — your previous request is still processing.",
+                minCharacters: "Please enter at least 5 characters",
+                maxFileCount: e => `You can upload a maximum of ${e} images.`,
+                duplicateFile: e => `File "${e}" is already added.`,
+                fileTooLarge: e => `File "${e}" is too large. Maximum size is 4 MB.`,
+                unsupportedFormat: e => `File "${e}" has an unsupported format. Please upload only PNG, JPG, or JPEG images.`
+            }
+        },
+        dividers: {
+            or: "or"
+        },
+        buttons: {
+            upgradePlan: e.i(62788).COMMON_STRINGS.buttons.UPGRADE_PLAN
+        },
+        select: {
+            province: {
+                placeholder: "Select a province/state",
+                selectCountryFirst: "Select a country first",
+                noProvincesAvailable: "No provinces available",
+                searchPlaceholder: "Search province/state",
+                notFound: "Province/state not found."
+            },
+            country: {
+                placeholder: "Select a country",
+                searchPlaceholder: "Search country",
+                notFound: "Country not found."
+            }
+        },
+        dataStates: {
+            error: {
+                title: "Failed to load data",
+                description: "Something went wrong while loading the data.",
+                chartDescription: "Something went wrong while loading the chart data."
+            },
+            empty: {
+                title: "No data available",
+                tableDescription: "There are no items to display.",
+                chartDescription: "There is no data to display for the selected period.",
+                pieChartTitle: "No data yet",
+                pieChartDescription: "Data will appear here once activity begins."
+            }
+        },
+        chat: {
+            imageMessage: {
+                generationStopped: "Generation stopped",
+                generatingImage: "Generating Image",
+                generationImageAlt: "Generation Image"
+            }
+        },
+        preview: {
+            editMode: {
+                title: "Customize mode",
+                selectPrompt: "Click an element to edit",
+                describeChanges: e => `Describe your changes to this ${e}.`,
+                text: {
+                    title: "You selected Text",
+                    description: "Use the prompt box below for more advanced text edits like colors, fonts, and sizing."
+                },
+                image: {
+                    title: "You selected Image",
+                    description: "Use the prompt box below to describe the image you want, or use the toolbar to replace it."
+                },
+                button: {
+                    title: "You selected Button",
+                    description: "Use the prompt box below to modify the button text, link, or style."
+                },
+                section: {
+                    title: "You selected Section",
+                    description: "Use the prompt box below to modify this section's layout or content."
+                },
+                generic: {
+                    title: "You selected an Element",
+                    description: "Use the prompt box below to describe your changes."
+                },
+                selectImage: {
+                    title: "Select an image",
+                    description: "Click an image on your site to replace it"
+                }
+            },
+            block: {
+                selectedBlock: "Selected block",
+                selectedPage: "Selected page"
+            },
+            item: {
+                defaultSubtitle: "New page"
+            }
+        }
+    };
+    e.s(["UI_STRINGS", 0, t])
+}, 30776, e => {
+    "use strict";
+    var t = e.i(43476),
+        i = e.i(932);
+    e.i(47167);
+    var a = e.i(71645),
+        o = e.i(31178),
+        n = e.i(47414),
+        s = e.i(74008),
+        r = e.i(21476),
+        l = e.i(72846),
+        c = a,
+        d = e.i(37806);
+
+    function u(e, t) {
+        if ("function" == typeof e) return e(t);
+        null != e && (e.current = t)
+    }
+    class m extends c.Component {
+        getSnapshotBeforeUpdate(e) {
+            let t = this.props.childRef.current;
+            if ((0, l.isHTMLElement)(t) && e.isPresent && !this.props.isPresent && !1 !== this.props.pop) {
+                let e = t.offsetParent,
+                    i = (0, l.isHTMLElement)(e) && e.offsetWidth || 0,
+                    a = (0, l.isHTMLElement)(e) && e.offsetHeight || 0,
+                    o = getComputedStyle(t),
+                    n = this.props.sizeRef.current;
+                n.height = parseFloat(o.height), n.width = parseFloat(o.width), n.top = t.offsetTop, n.left = t.offsetLeft, n.right = i - n.width - n.left, n.bottom = a - n.height - n.top
+            }
+            return null
+        }
+        componentDidUpdate() {}
+        render() {
+            return this.props.children
+        }
+    }
+
+    function p({
+        children: e,
+        isPresent: i,
+        anchorX: o,
+        anchorY: n,
+        root: s,
+        pop: r
+    }) {
+        let l = (0, c.useId)(),
+            f = (0, c.useRef)(null),
+            h = (0, c.useRef)({
+                width: 0,
+                height: 0,
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0
+            }),
+            {
+                nonce: g
+            } = (0, c.useContext)(d.MotionConfigContext),
+            y = function(...e) {
+                return a.useCallback(function(...e) {
+                    return t => {
+                        let i = !1,
+                            a = e.map(e => {
+                                let a = u(e, t);
+                                return i || "function" != typeof a || (i = !0), a
+                            });
+                        if (i) return () => {
+                            for (let t = 0; t < a.length; t++) {
+                                let i = a[t];
+                                "function" == typeof i ? i() : u(e[t], null)
+                            }
+                        }
+                    }
+                }(...e), e)
+            }(f, e.props ? .ref ? ? e ? .ref);
+        return (0, c.useInsertionEffect)(() => {
+            let {
+                width: e,
+                height: t,
+                top: a,
+                left: c,
+                right: d,
+                bottom: u
+            } = h.current;
+            if (i || !1 === r || !f.current || !e || !t) return;
+            let m = "left" === o ? `left: ${c}` : `right: ${d}`,
+                p = "bottom" === n ? `bottom: ${u}` : `top: ${a}`;
+            f.current.dataset.motionPopId = l;
+            let y = document.createElement("style");
+            g && (y.nonce = g);
+            let b = s ? ? document.head;
+            return b.appendChild(y), y.sheet && y.sheet.insertRule(`
+          [data-motion-pop-id="${l}"] {
+            position: absolute !important;
+            width: ${e}px !important;
+            height: ${t}px !important;
+            ${m}px !important;
+            ${p}px !important;
+          }
+        `), () => {
+                f.current ? .removeAttribute("data-motion-pop-id"), b.contains(y) && b.removeChild(y)
+            }
+        }, [i]), (0, t.jsx)(m, {
+            isPresent: i,
+            childRef: f,
+            sizeRef: h,
+            pop: r,
+            children: !1 === r ? e : c.cloneElement(e, {
+                ref: y
+            })
+        })
+    }
+    let f = ({
+        children: e,
+        initial: i,
+        isPresent: o,
+        onExitComplete: s,
+        custom: l,
+        presenceAffectsLayout: c,
+        mode: d,
+        anchorX: u,
+        anchorY: m,
+        root: f
+    }) => {
+        let g = (0, n.useConstant)(h),
+            y = (0, a.useId)(),
+            b = !0,
+            x = (0, a.useMemo)(() => (b = !1, {
+                id: y,
+                initial: i,
+                isPresent: o,
+                custom: l,
+                onExitComplete: e => {
+                    for (let t of (g.set(e, !0), g.values()))
+                        if (!t) return;
+                    s && s()
+                },
+                register: e => (g.set(e, !1), () => g.delete(e))
+            }), [o, g, s]);
+        return c && b && (x = { ...x
+        }), (0, a.useMemo)(() => {
+            g.forEach((e, t) => g.set(t, !1))
+        }, [o]), a.useEffect(() => {
+            o || g.size || !s || s()
+        }, [o]), e = (0, t.jsx)(p, {
+            pop: "popLayout" === d,
+            isPresent: o,
+            anchorX: u,
+            anchorY: m,
+            root: f,
+            children: e
+        }), (0, t.jsx)(r.PresenceContext.Provider, {
+            value: x,
+            children: e
+        })
+    };
+
+    function h() {
+        return new Map
+    }
+    var g = e.i(64978);
+    let y = e => e.key || "";
+
+    function b(e) {
+        let t = [];
+        return a.Children.forEach(e, e => {
+            (0, a.isValidElement)(e) && t.push(e)
+        }), t
+    }
+    let x = ({
+        children: e,
+        custom: i,
+        initial: r = !0,
+        onExitComplete: l,
+        presenceAffectsLayout: c = !0,
+        mode: d = "sync",
+        propagate: u = !1,
+        anchorX: m = "left",
+        anchorY: p = "top",
+        root: h
+    }) => {
+        let [x, v] = (0, g.usePresence)(u), w = (0, a.useMemo)(() => b(e), [e]), C = u && !x ? [] : w.map(y), N = (0, a.useRef)(!0), S = (0, a.useRef)(w), k = (0, n.useConstant)(() => new Map), j = (0, a.useRef)(new Set), [P, E] = (0, a.useState)(w), [M, A] = (0, a.useState)(w);
+        (0, s.useIsomorphicLayoutEffect)(() => {
+            N.current = !1, S.current = w;
+            for (let e = 0; e < M.length; e++) {
+                let t = y(M[e]);
+                C.includes(t) ? (k.delete(t), j.current.delete(t)) : !0 !== k.get(t) && k.set(t, !1)
+            }
+        }, [M, C.length, C.join("-")]);
+        let I = [];
+        if (w !== P) {
+            let e = [...w];
+            for (let t = 0; t < M.length; t++) {
+                let i = M[t],
+                    a = y(i);
+                C.includes(a) || (e.splice(t, 0, i), I.push(i))
+            }
+            return "wait" === d && I.length && (e = I), A(b(e)), E(w), null
+        }
+        let {
+            forceRender: _
+        } = (0, a.useContext)(o.LayoutGroupContext);
+        return (0, t.jsx)(t.Fragment, {
+            children: M.map(e => {
+                let a = y(e),
+                    o = (!u || !!x) && (w === M || C.includes(a));
+                return (0, t.jsx)(f, {
+                    isPresent: o,
+                    initial: (!N.current || !!r) && void 0,
+                    custom: i,
+                    presenceAffectsLayout: c,
+                    mode: d,
+                    root: h,
+                    onExitComplete: o ? void 0 : () => {
+                        if (j.current.has(a) || !k.has(a)) return;
+                        j.current.add(a), k.set(a, !0);
+                        let e = !0;
+                        k.forEach(t => {
+                            t || (e = !1)
+                        }), e && (_ ? .(), A(S.current), u && v ? .(), l && l())
+                    },
+                    anchorX: m,
+                    anchorY: p,
+                    children: e
+                }, a)
+            })
+        })
+    };
+    var v = e.i(46932);
+    let w = {
+        fade: {
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            }
+        },
+        "fade-scale": {
+            initial: {
+                opacity: 0,
+                scale: .95
+            },
+            animate: {
+                opacity: 1,
+                scale: 1
+            },
+            exit: {
+                opacity: 0,
+                scale: .95
+            }
+        }
+    };
+    e.s(["default", 0, e => {
+        let a, o, n = (0, i.c)(9),
+            {
+                isVisible: s,
+                children: r,
+                className: l,
+                style: c,
+                duration: d,
+                variant: u
+            } = e,
+            m = void 0 === d ? .2 : d,
+            p = void 0 === u ? "fade" : u;
+        return n[0] !== r || n[1] !== l || n[2] !== m || n[3] !== s || n[4] !== c || n[5] !== p ? (a = s && (0, t.jsx)(v.motion.div, { ...w[p],
+            transition: {
+                duration: m
+            },
+            className: l,
+            style: c,
+            children: r
+        }), n[0] = r, n[1] = l, n[2] = m, n[3] = s, n[4] = c, n[5] = p, n[6] = a) : a = n[6], n[7] !== a ? (o = (0, t.jsx)(x, {
+            children: a
+        }), n[7] = a, n[8] = o) : o = n[8], o
+    }], 30776)
+}, 4392, e => {
+    "use strict";
+    let t = null,
+        i = () => (t || (t = e.A(67828).then(e => e.default)), t);
+    e.s(["clarityEvent", 0, e => {
+        i().then(t => t.event(e)).catch(() => {})
+    }, "clarityTag", 0, (e, t) => {
+        i().then(i => i.setTag(e, String(t))).catch(() => {})
+    }])
+}, 11519, e => {
+    "use strict";
+    var t = e.i(68834),
+        i = e.i(79473);
+    let a = (0, t.create)()((0, i.devtools)(e => ({
+        activeModal: null,
+        modalData: {},
+        openModal: (t, i = {}) => e({
+            activeModal: t,
+            modalData: i
+        }),
+        closeModal: () => e({
+            activeModal: null,
+            modalData: {}
+        }),
+        setModalData: t => e(e => ({
+            modalData: { ...e.modalData,
+                ...t
+            }
+        }))
+    }), {
+        name: "modal-store"
+    }));
+    e.s(["useModalStore", 0, a])
+}, 37727, e => {
+    "use strict";
+    let t = (0, e.i(75254).default)("x", [
+        ["path", {
+            d: "M18 6 6 18",
+            key: "1bl5f8"
+        }],
+        ["path", {
+            d: "m6 6 12 12",
+            key: "d8bk6v"
+        }]
+    ]);
+    e.s(["X", 0, t], 37727)
+}, 15619, e => {
+    "use strict";
+    var t = e.i(43476),
+        i = e.i(932),
+        a = e.i(71645),
+        o = e.i(74080);
+    e.s(["default", 0, e => {
+        let n, s, r, l, c = (0, i.c)(9),
+            {
+                children: d,
+                container: u,
+                id: m,
+                className: p
+            } = e,
+            [f, h] = (0, a.useState)(!1),
+            g = u ? ? ("u" > typeof document ? document.body : null);
+        if (c[0] === Symbol.for("react.memo_cache_sentinel") ? (n = () => (h(!0), () => h(!1)), s = [], c[0] = n, c[1] = s) : (n = c[0], s = c[1]), (0, a.useEffect)(n, s), !f || !g) return null;
+        c[2] !== d || c[3] !== p || c[4] !== m ? (r = p || m ? (0, t.jsx)("div", {
+            id: m,
+            className: p,
+            children: d
+        }) : d, c[2] = d, c[3] = p, c[4] = m, c[5] = r) : r = c[5];
+        let y = r;
+        return c[6] !== y || c[7] !== g ? (l = (0, o.createPortal)(y, g), c[6] = y, c[7] = g, c[8] = l) : l = c[8], l
+    }])
+}, 67082, 15446, e => {
+    "use strict";
+    var t = e.i(43476),
+        i = e.i(932),
+        a = e.i(71645),
+        o = e.i(15619),
+        n = e.i(30776);
+    let s = e => {
+        let t, o, n = (0, i.c)(3);
+        n[0] !== e ? (t = () => (e ? document.body.style.overflow = "hidden" : document.body.style.overflow = "", r), o = [e], n[0] = e, n[1] = t, n[2] = o) : (t = n[1], o = n[2]), (0, a.useEffect)(t, o)
+    };
+
+    function r() {
+        document.body.style.overflow = ""
+    }
+    e.s(["useBodyScrollLock", 0, s], 15446);
+    var l = e.i(75157);
+
+    function c(e) {
+        return e.stopPropagation()
+    }
+    e.s(["default", 0, e => {
+        let r, d, u, m, p, f, h, g, y, b = (0, i.c)(26),
+            {
+                isVisible: x,
+                onClose: v,
+                children: w,
+                zIndexClass: C,
+                backdropClassName: N,
+                closeOnEscape: S,
+                lockScroll: k,
+                container: j,
+                contentClassName: P,
+                overlayOnClickClose: E
+            } = e,
+            M = void 0 === C ? "z-200" : C,
+            A = void 0 === S || S;
+        s((void 0 === k || k) && x), b[0] !== A || b[1] !== x || b[2] !== v ? (r = () => {
+            if (!x || !A) return;
+            let e = e => {
+                "Escape" === e.key && v()
+            };
+            return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e)
+        }, d = [x, A, v], b[0] = A, b[1] = x, b[2] = v, b[3] = r, b[4] = d) : (r = b[3], d = b[4]), (0, a.useEffect)(r, d), b[5] !== N || b[6] !== M ? (u = (0, l.cls)("fixed flex items-center justify-center top-0 left-0 w-full h-full bg-white/10 backdrop-blur-sm", M, N), b[5] = N, b[6] = M, b[7] = u) : u = b[7];
+        let I = void 0 === E || E ? v : void 0;
+        return b[8] !== I ? (m = (0, t.jsx)("div", {
+            onClick: I,
+            className: "absolute inset-0",
+            role: "dialog",
+            "aria-modal": "true"
+        }), b[8] = I, b[9] = m) : m = b[9], b[10] !== P ? (p = (0, l.cls)("relative", P), b[10] = P, b[11] = p) : p = b[11], b[12] !== w ? (f = (0, t.jsx)("div", {
+            onClick: c,
+            className: "contents",
+            children: w
+        }), b[12] = w, b[13] = f) : f = b[13], b[14] !== x || b[15] !== p || b[16] !== f ? (h = (0, t.jsx)(n.default, {
+            isVisible: x,
+            variant: "fade-scale",
+            className: p,
+            children: f
+        }), b[14] = x, b[15] = p, b[16] = f, b[17] = h) : h = b[17], b[18] !== x || b[19] !== h || b[20] !== u || b[21] !== m ? (g = (0, t.jsxs)(n.default, {
+            isVisible: x,
+            className: u,
+            children: [m, h]
+        }), b[18] = x, b[19] = h, b[20] = u, b[21] = m, b[22] = g) : g = b[22], b[23] !== j || b[24] !== g ? (y = (0, t.jsx)(o.default, {
+            container: j,
+            children: g
+        }), b[23] = j, b[24] = g, b[25] = y) : y = b[25], y
+    }], 67082)
+}, 39312, e => {
+    "use strict";
+    let t = (0, e.i(75254).default)("zap", [
+        ["path", {
+            d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",
+            key: "1xq2db"
+        }]
+    ]);
+    e.s(["Zap", 0, t], 39312)
+}, 89659, e => {
+    "use strict";
+    var t = e.i(43476),
+        i = e.i(932),
+        a = e.i(37727),
+        o = e.i(39312),
+        n = e.i(21742),
+        s = e.i(67082),
+        r = e.i(71645),
+        l = e.i(11519),
+        c = e.i(4392),
+        d = e.i(75980);
+    e.s(["default", 0, () => {
+        let e, u, m, p, f, h, g, y, b, x, v, w, C, N, S, k, j, P = (0, i.c)(32),
+            {
+                isVisible: E,
+                actionName: M,
+                creditsNeeded: A,
+                creditsAvailable: I,
+                handleClose: _,
+                handleUpgradePlan: T
+            } = (() => {
+                let e, t, a, o, n, s = (0, i.c)(16),
+                    {
+                        activeModal: d,
+                        modalData: u,
+                        closeModal: m,
+                        openModal: p
+                    } = (0, l.useModalStore)(),
+                    f = "insufficient-credits" === d,
+                    h = u.actionName || "Unknown Action",
+                    g = u.creditsNeeded || 0,
+                    y = u.creditsAvailable || 0,
+                    b = u.shortfall || 0;
+                s[0] !== f ? (e = () => {
+                    f && (0, c.clarityEvent)("insufficient_credits_shown")
+                }, t = [f], s[0] = f, s[1] = e, s[2] = t) : (e = s[1], t = s[2]), (0, r.useEffect)(e, t), s[3] !== m ? (a = () => {
+                    m()
+                }, s[3] = m, s[4] = a) : a = s[4];
+                let x = a;
+                s[5] !== m || s[6] !== p ? (o = () => {
+                    (0, c.clarityEvent)("insufficient_credits_upgrade_clicked"), m(), p("pricing")
+                }, s[5] = m, s[6] = p, s[7] = o) : o = s[7];
+                let v = o;
+                return s[8] !== h || s[9] !== y || s[10] !== g || s[11] !== x || s[12] !== v || s[13] !== f || s[14] !== b ? (n = {
+                    isVisible: f,
+                    actionName: h,
+                    creditsNeeded: g,
+                    creditsAvailable: y,
+                    shortfall: b,
+                    handleClose: x,
+                    handleUpgradePlan: v
+                }, s[8] = h, s[9] = y, s[10] = g, s[11] = x, s[12] = v, s[13] = f, s[14] = b, s[15] = n) : n = s[15], n
+            })();
+        return P[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(a.X, {
+            className: "h-4/10 w-4/10 text-black"
+        }), P[0] = e) : e = P[0], P[1] !== _ ? (u = (0, t.jsx)("div", {
+            className: "absolute! top-4 right-4 h-8 w-auto aspect-square button-secondary rounded-full flex items-center justify-center cursor-pointer z-10",
+            onClick: _,
+            children: e
+        }), P[1] = _, P[2] = u) : u = P[2], P[3] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, t.jsx)("div", {
+            className: "relative h-15 aspect-square flex items-center justify-center rounded-sm button-accent shrink-0",
+            children: (0, t.jsx)(o.Zap, {
+                className: "relative h-1/2 w-1/2 text-white",
+                strokeWidth: 1.5
+            })
+        }), p = (0, t.jsx)("h2", {
+            className: "text-2xl font-medium text-black leading-tight",
+            children: d.UI_STRINGS.modals.insufficientCredits.title
+        }), P[3] = m, P[4] = p) : (m = P[3], p = P[4]), P[5] !== M ? (f = d.UI_STRINGS.modals.insufficientCredits.subtitle(M), P[5] = M, P[6] = f) : f = P[6], P[7] !== f ? (h = (0, t.jsxs)("div", {
+            className: "flex flex-col gap-2 text-center items-center",
+            children: [m, p, (0, t.jsx)("p", {
+                className: "text-sm text-black/75",
+                children: f
+            })]
+        }), P[7] = f, P[8] = h) : h = P[8], P[9] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, t.jsx)("span", {
+            className: "text-sm text-black/75",
+            children: d.UI_STRINGS.modals.insufficientCredits.required
+        }), P[9] = g) : g = P[9], P[10] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, t.jsx)(o.Zap, {
+            className: "h-(--text-sm) w-auto text-blue"
+        }), P[10] = y) : y = P[10], P[11] !== A ? (b = (0, t.jsxs)("div", {
+            className: "flex items-center justify-between",
+            children: [g, (0, t.jsxs)("div", {
+                className: "flex items-center gap-1",
+                children: [y, (0, t.jsx)("span", {
+                    className: "text-sm font-medium text-blue",
+                    children: A
+                })]
+            })]
+        }), P[11] = A, P[12] = b) : b = P[12], P[13] === Symbol.for("react.memo_cache_sentinel") ? (x = (0, t.jsx)("div", {
+            className: "h-px bg-black/10"
+        }), P[13] = x) : x = P[13], P[14] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, t.jsx)("span", {
+            className: "text-sm text-black/75",
+            children: d.UI_STRINGS.modals.insufficientCredits.available
+        }), P[14] = v) : v = P[14], P[15] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, t.jsx)(o.Zap, {
+            className: "h-(--text-sm) w-auto text-black"
+        }), P[15] = w) : w = P[15], P[16] !== I ? (C = (0, t.jsxs)("div", {
+            className: "flex items-center justify-between",
+            children: [v, (0, t.jsxs)("div", {
+                className: "flex items-center gap-1",
+                children: [w, (0, t.jsx)("span", {
+                    className: "text-sm font-medium text-black",
+                    children: I
+                })]
+            })]
+        }), P[16] = I, P[17] = C) : C = P[17], P[18] !== C || P[19] !== b ? (N = (0, t.jsxs)("div", {
+            className: "button-secondary rounded-sm p-5 flex flex-col gap-4 w-full",
+            children: [b, x, C]
+        }), P[18] = C, P[19] = b, P[20] = N) : N = P[20], P[21] !== T ? (S = (0, t.jsx)(n.default, {
+            onClick: T,
+            styleClassName: "button-accent",
+            className: "w-full justify-center",
+            children: d.UI_STRINGS.buttons.upgradePlan
+        }), P[21] = T, P[22] = S) : S = P[22], P[23] !== u || P[24] !== N || P[25] !== S || P[26] !== h ? (k = (0, t.jsxs)("div", {
+            className: "relative w-full flex flex-col gap-5 card rounded-sm p-8",
+            children: [u, h, N, S]
+        }), P[23] = u, P[24] = N, P[25] = S, P[26] = h, P[27] = k) : k = P[27], P[28] !== _ || P[29] !== E || P[30] !== k ? (j = (0, t.jsx)(s.default, {
+            isVisible: E,
+            onClose: _,
+            zIndexClass: "z-200",
+            backdropClassName: "p-5",
+            contentClassName: "w-full max-w-sm",
+            overlayOnClickClose: !0,
+            children: k
+        }), P[28] = _, P[29] = E, P[30] = k, P[31] = j) : j = P[31], j
+    }], 89659)
+}, 94901, e => {
+    e.n(e.i(89659))
+}, 67828, e => {
+    e.v(t => Promise.all(["static/chunks/0.uc_q6tt3ufn.js"].map(t => e.l(t))).then(() => t(89786)))
+}]);
