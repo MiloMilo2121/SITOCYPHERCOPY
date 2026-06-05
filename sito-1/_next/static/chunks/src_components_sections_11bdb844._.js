@@ -1620,7 +1620,7 @@
             logoAlt = "",
             logoText,
             columns,
-            copyrightText = `© 2025 | Webild`,
+            copyrightText = `© 2025 | cypher`,
             onPrivacyClick,
             ariaLabel = "Site footer",
             className = "",

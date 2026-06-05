@@ -1304,26 +1304,26 @@
                     children: [
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2f$NavbarLayoutFloatingOverlay$2f$NavbarLayoutFloatingOverlay$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            brandName: "Webild",
+                            brandName: "cypher",
                             navItems: [{
-                                    name: "Work",
+                                    name: "Sistema",
                                     id: "work"
                                 },
                                 {
-                                    name: "Services",
+                                    name: "Metodo",
                                     id: "services"
                                 },
                                 {
-                                    name: "About",
+                                    name: "Team",
                                     id: "about"
                                 },
                                 {
-                                    name: "Contact",
+                                    name: "Contatti",
                                     id: "contact"
                                 }
                             ],
                             button: {
-                                text: "Get Started",
+                                text: "Prenota l'audit",
                                 href: "#contact"
                             }
                         }, void 0, false, {
@@ -1333,20 +1333,20 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$hero$2f$HeroSplitDoubleCarousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "We Build Digital Experiences",
-                            description: "Transform your brand with cutting-edge web design and development. We craft stunning websites that convert visitors into customers.",
-                            tag: "Award-Winning Agency",
+                            title: "Costruiamo sistemi di acquisizione clienti.",
+                            description: "Non vendiamo gestione di pubblicità. Strategia, advertising performance e AI in un unico sistema — con compenso legato alle vendite che generiamo.",
+                            tag: "Advanced Scaling System · Padova",
                             tagIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
                             tagAnimation: "slide-up",
                             background: {
                                 variant: "canvas-reveal"
                             },
                             buttons: [{
-                                    text: "Start Project",
+                                    text: "Prenota l'audit",
                                     href: "#contact"
                                 },
                                 {
-                                    text: "View Work",
+                                    text: "Vedi il metodo",
                                     href: "#work"
                                 }
                             ],
@@ -1398,19 +1398,19 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$feature$2f$FeatureBento$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Our Services",
-                            description: "We offer a full suite of digital services to help your brand stand out online.",
+                            title: "Il sistema",
+                            description: "Tre moduli, un solo obiettivo: trasformare l'investimento pubblicitario in clienti. Ogni modulo si aggancia al precedente.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             animationType: "slide-up",
                             buttons: [{
-                                text: "All Services",
+                                text: "Come lavoriamo",
                                 href: "#services"
                             }],
                             buttonAnimation: "slide-up",
                             features: [{
-                                    title: "SEO",
-                                    description: "We optimize your website to rank higher on search engines and drive organic traffic.",
+                                    title: "Cypher OS",
+                                    description: "Strategia e posizionamento. Mercato, offerta, margini, cliente ideale: il piano viene prima delle campagne. Sempre.",
                                     bentoComponent: "marquee",
                                     centerIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"],
                                     variant: "text",
@@ -1426,8 +1426,8 @@
                                     ]
                                 },
                                 {
-                                    title: "Web Development",
-                                    description: "Custom-built websites that are fast, responsive, and designed to convert.",
+                                    title: "Cypher Engine",
+                                    description: "Advertising performance su Meta, Google e LinkedIn. Test, lettura dei dati, scaling disciplinato.",
                                     bentoComponent: "media-stack",
                                     items: [{
                                             imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/dev-2.webp",
@@ -1439,13 +1439,13 @@
                                         },
                                         {
                                             imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/dev-3.webp",
-                                            imageAlt: "Web project - Summit Roofing"
+                                            imageAlt: "Web project - E-commerce di prodotto"
                                         }
                                     ]
                                 },
                                 {
-                                    title: "Branding",
-                                    description: "Build a memorable brand identity that resonates with your audience.",
+                                    title: "Cypher Lab",
+                                    description: "Automazioni e AI: follow-up, CRM, gestione e-commerce. Dove il sistema diventa operativo ogni giorno.",
                                     bentoComponent: "media-stack",
                                     items: [{
                                             imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-1.webp",
@@ -1469,53 +1469,53 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$feature$2f$FeatureCardTwentySix$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Our Work",
-                            description: "A selection of projects we've crafted for clients across industries.",
+                            title: "I settori",
+                            description: "Lavoriamo dove ci sono prodotto solido, margini sani e un founder che vuole crescere.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             buttons: [{
-                                text: "View All Work",
+                                text: "Verifica il tuo settore",
                                 href: "#work"
                             }],
                             buttonAnimation: "slide-up",
                             cardClassName: "!h-auto aspect-video",
                             features: [{
-                                    title: "Umbra Skincare",
-                                    description: "Luxury fragrance e-commerce",
+                                    title: "Manifattura di nicchia",
+                                    description: "Prodotto differenziato, vendita B2B e B2C",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-1.webp",
-                                    imageAlt: "Umbra Skincare website",
+                                    imageAlt: "Manifattura di nicchia website",
                                     buttonIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"],
                                     buttonHref: "#"
                                 },
                                 {
-                                    title: "Luxuria Travel",
-                                    description: "Bespoke luxury travel experiences",
+                                    title: "Studi medici e dentistici",
+                                    description: "Acquisizione pazienti privati, locale",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-2.webp",
-                                    imageAlt: "Luxuria Travel website",
+                                    imageAlt: "Studi medici e dentistici website",
                                     buttonIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"],
                                     buttonHref: "#"
                                 },
                                 {
-                                    title: "Dental Care",
-                                    description: "Premier dental practice",
+                                    title: "Ristorazione e retail multi-sede",
+                                    description: "Traffico, prenotazioni, ripetizione d'acquisto",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-3.webp",
-                                    imageAlt: "Luxury Dental Care website",
+                                    imageAlt: "Luxury Ristorazione e retail multi-sede website",
                                     buttonIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"],
                                     buttonHref: "#"
                                 },
                                 {
-                                    title: "Summit Roofing",
-                                    description: "Professional roofing services",
+                                    title: "E-commerce di prodotto",
+                                    description: "Brand propri, no puro arbitraggio",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-4.webp",
-                                    imageAlt: "Summit Roofing website",
+                                    imageAlt: "E-commerce di prodotto website",
                                     buttonIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"],
                                     buttonHref: "#"
                                 },
                                 {
-                                    title: "Dubai Real Estate",
-                                    description: "Luxury property listings",
+                                    title: "B2B e servizi specializzati",
+                                    description: "Percorsi di acquisizione lunghi, alto ticket",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-5.webp",
-                                    imageAlt: "Dubai Real Estate website",
+                                    imageAlt: "B2B e servizi specializzati website",
                                     buttonIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"],
                                     buttonHref: "#"
                                 }
@@ -1527,14 +1527,14 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$feature$2f$FeatureBento$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Our Promise",
-                            description: "We deliver results that speak for themselves.",
+                            title: "Il metodo",
+                            description: "Niente magia: processo, dati e disciplina. Così funziona la partnership, dal giorno uno.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             animationType: "slide-up",
                             features: [{
-                                    title: "All Devices Optimization",
-                                    description: "Pixel-perfect websites that look stunning on every screen size and device.",
+                                    title: "Un sistema, tutti i canali",
+                                    description: "Meta, Google, LinkedIn: messaggio coerente e creatività adattate a ogni piattaforma, senza dispersione.",
                                     bentoComponent: "phone",
                                     statusIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"],
                                     alertIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"],
@@ -1575,17 +1575,17 @@
                                     ]
                                 },
                                 {
-                                    title: "Secure Hosting",
-                                    description: "Enterprise-grade security and 99.9% uptime for your website.",
+                                    title: "Tracking a prova di decisione",
+                                    description: "Pixel, conversioni e attribuzione configurati bene. Se i dati sono sporchi, le decisioni sono sbagliate.",
                                     bentoComponent: "reveal-icon",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"]
                                 },
                                 {
-                                    title: "Fast Turnaround",
-                                    description: "From concept to launch in record time without sacrificing quality.",
+                                    title: "Live in 14 giorni",
+                                    description: "Dalla firma alle prime campagne attive in due settimane. La strategia non resta in un documento.",
                                     bentoComponent: "timeline",
-                                    heading: "Project Launch",
-                                    subheading: "Week 1",
+                                    heading: "Onboarding",
+                                    subheading: "Giorno 1-3",
                                     items: [{
                                             label: "Discovery & wireframes",
                                             detail: "Day 1-3"
@@ -1602,8 +1602,8 @@
                                     completedLabel: "Live"
                                 },
                                 {
-                                    title: "Seamless Integrations",
-                                    description: "Connect with the tools you already use — CRMs, analytics, payments, and more.",
+                                    title: "Si integra con i tuoi strumenti",
+                                    description: "CRM, analytics, e-commerce, gestionale: il sistema si collega a ciò che usi già. Niente migrazioni forzate.",
                                     bentoComponent: "orbiting-icons",
                                     centerIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$puzzle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Puzzle$3e$__["Puzzle"],
                                     items: [{
@@ -1621,8 +1621,8 @@
                                     ]
                                 },
                                 {
-                                    title: "Growth Trends",
-                                    description: "Data-driven insights to optimize your search presence and drive traffic.",
+                                    title: "Cypher Atlas",
+                                    description: "La dashboard sempre aperta: ROAS, CAC e vendite in tempo reale. Sai dove va ogni euro, prima di chiederlo.",
                                     bentoComponent: "line-chart"
                                 }
                             ]
@@ -1633,9 +1633,9 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$testimonial$2f$TestimonialCardFifteen$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            testimonial: "Webild completely transformed our online presence. The team delivered a stunning website that exceeded our expectations and doubled our conversion rate.",
+                            testimonial: "Le metriche di vanity non pagano gli stipendi. Per questo non le presentiamo: in dashboard trovi ROAS, CAC e vendite — i numeri che muovono il fatturato.",
                             rating: 5,
-                            author: "— Maria Santos, CEO at Luxuria Travel",
+                            author: "— Maria Santos, CEO at Studi medici e dentistici",
                             avatars: [{
                                 src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp",
                                 alt: "Client"
@@ -1650,31 +1650,31 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$metrics$2f$MetricCardOne$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Trusted by Industry Leaders",
-                            description: "Years of experience building digital products that drive real results.",
+                            title: "Il modello, in cifra",
+                            description: "Numeri di struttura, non promesse: come funziona la partnership con Cypher.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             gridVariant: "uniform-all-items-equal",
                             animationType: "slide-up",
                             metrics: [{
                                     id: "projects",
-                                    value: "100+",
-                                    title: "Projects",
-                                    description: "Successfully delivered across all industries",
+                                    value: "14",
+                                    title: "Giorni",
+                                    description: "Dalla firma alle prime campagne live",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"]
                                 },
                                 {
                                     id: "satisfaction",
-                                    value: "99%",
-                                    title: "Satisfaction",
-                                    description: "Client satisfaction rate and counting",
+                                    value: "5-10%",
+                                    title: "Performance fee",
+                                    description: "Sulle vendite generate. Skin in the game.",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
                                 },
                                 {
                                     id: "years",
-                                    value: "8+",
-                                    title: "Years",
-                                    description: "Of crafting exceptional digital experiences",
+                                    value: "100%",
+                                    title: "Proprietà tua",
+                                    description: "Account, dati e creatività restano all'azienda",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"]
                                 }
                             ]
@@ -1685,27 +1685,27 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$feature$2f$FeatureCardSixteen$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Why Choose Webild",
-                            description: "See the difference a professional web agency makes.",
+                            title: "Perché Cypher",
+                            description: "La differenza tra gestire campagne e costruire un sistema di acquisizione.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             animationType: "slide-up",
                             negativeCard: {
                                 items: [
-                                    "Generic templates with no personality",
-                                    "Slow load times and poor performance",
-                                    "No SEO strategy or search visibility",
-                                    "Outdated design that hurts credibility",
-                                    "No ongoing support after launch"
+                                    "Fee mensile fissa, slegata dai risultati",
+                                    "Report di metriche vanity che nessuno legge",
+                                    "No Cypher OS strategy or search visibility",
+                                    "Account pubblicitari e dati in mano all'agenzia",
+                                    "Stesso playbook per ogni cliente"
                                 ]
                             },
                             positiveCard: {
                                 items: [
-                                    "Custom designs tailored to your brand",
-                                    "Lightning-fast performance on all devices",
-                                    "Built-in SEO to drive organic traffic",
-                                    "Modern design that builds trust",
-                                    "Dedicated support and maintenance"
+                                    "Quota fissa + performance fee sulle vendite",
+                                    "Dashboard live: ROAS, CAC e vendite sempre visibili",
+                                    "Built-in Cypher OS to drive organic traffic",
+                                    "Accessi, dati e creatività restano di tua proprietà",
+                                    "Sistema su misura: test, lettura dati, scaling"
                                 ]
                             }
                         }, void 0, false, {
@@ -1715,32 +1715,32 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$team$2f$TeamCardFive$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Meet the Team",
-                            description: "The creative minds behind your next project.",
+                            title: "Chi c'è dietro",
+                            description: "Niente reparti fantasma: chi lavora sul tuo sistema ha nome e cognome.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             animationType: "slide-up",
                             mediaClassName: "object-[65%_center]",
                             team: [{
                                     id: "1",
-                                    name: "Sarah Miller",
-                                    role: "Lead Developer",
+                                    name: "Marco Milanello",
+                                    role: "Founder · Strategia & Performance",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-1.webp",
-                                    imageAlt: "Sarah Miller"
+                                    imageAlt: "Marco Milanello"
                                 },
                                 {
                                     id: "2",
-                                    name: "Valentina Reyes",
-                                    role: "Creative Director",
+                                    name: "[NOME 2 — chiedere a Marco]",
+                                    role: "[RUOLO 2]",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-2.webp",
-                                    imageAlt: "Valentina Reyes"
+                                    imageAlt: "[NOME 2 — chiedere a Marco]"
                                 },
                                 {
                                     id: "3",
-                                    name: "Carlos Mendoza",
-                                    role: "UX Designer",
+                                    name: "[NOME 3 — chiedere a Marco]",
+                                    role: "[RUOLO 3]",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp",
-                                    imageAlt: "Carlos Mendoza"
+                                    imageAlt: "[NOME 3 — chiedere a Marco]"
                                 }
                             ]
                         }, void 0, false, {
@@ -1750,34 +1750,34 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$faq$2f$FaqBase$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Frequently Asked Questions",
-                            description: "Everything you need to know about working with us.",
+                            title: "Domande frequenti",
+                            description: "Quello che chiedono tutti, prima di iniziare. Risposte dirette.",
                             textboxLayout: "default",
                             useInvertedBackground: false,
                             faqsAnimation: "slide-up",
                             faqs: [{
                                     id: "1",
-                                    title: "How long does a typical project take?",
+                                    title: "In cosa siete diversi da un'agenzia?",
                                     content: "Most projects are completed within 2-4 weeks depending on scope and complexity. We'll provide a detailed timeline during our initial consultation."
                                 },
                                 {
                                     id: "2",
-                                    title: "What is your pricing structure?",
-                                    content: "We offer project-based pricing tailored to your needs. Every project includes design, development, SEO optimization, and post-launch support."
+                                    title: "Come funziona il compenso?",
+                                    content: "We offer project-based pricing tailored to your needs. Every project includes design, development, Cypher OS optimization, and post-launch support."
                                 },
                                 {
                                     id: "3",
-                                    title: "Do you offer ongoing maintenance?",
+                                    title: "Qual è l'investimento per partire?",
                                     content: "Yes! We provide ongoing support and maintenance packages to keep your website updated, secure, and performing at its best."
                                 },
                                 {
                                     id: "4",
-                                    title: "Can you redesign my existing website?",
-                                    content: "Absolutely. We specialize in website redesigns that modernize your brand while preserving your existing content and SEO rankings."
+                                    title: "In quanto tempo vedo i primi risultati?",
+                                    content: "Absolutely. We specialize in website redesigns that modernize your brand while preserving your existing content and Cypher OS rankings."
                                 },
                                 {
                                     id: "5",
-                                    title: "What technologies do you use?",
+                                    title: "Lavorate con qualsiasi azienda?",
                                     content: "We build with modern technologies including Next.js, React, and Tailwind CSS to ensure fast, scalable, and maintainable websites."
                                 }
                             ]
@@ -1788,18 +1788,18 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$contact$2f$ContactCTA$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            tag: "Get in Touch",
-                            title: "Ready to Transform Your Digital Presence?",
-                            description: "Let's build something extraordinary together. Get in touch and let's discuss your next project.",
+                            tag: "Contatti",
+                            title: "Vediamo se sei il caso giusto per Cypher.",
+                            description: "Un audit di 30 minuti: guardiamo offerta, numeri e margini. Se non possiamo aiutarti, te lo diciamo subito — senza impegno e senza script di vendita.",
                             background: {
                                 variant: "rotated-rays-animated"
                             },
                             buttons: [{
-                                    text: "Start Your Project",
+                                    text: "Prenota l'audit",
                                     href: "#contact"
                                 },
                                 {
-                                    text: "View Our Work",
+                                    text: "View I settori",
                                     href: "#work"
                                 }
                             ],
@@ -1812,40 +1812,40 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$footer$2f$FooterBase$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            logoText: "Webild",
-                            copyrightText: "© 2026 | Webild",
+                            logoText: "cypher",
+                            copyrightText: "© 2026 | cypher",
                             columns: [{
-                                    title: "Company",
+                                    title: "Cypher",
                                     items: [{
-                                            label: "About",
+                                            label: "Team",
                                             href: "#about"
                                         },
                                         {
-                                            label: "Services",
+                                            label: "Metodo",
                                             href: "#services"
                                         },
                                         {
-                                            label: "Work",
+                                            label: "Sistema",
                                             href: "#work"
                                         },
                                         {
-                                            label: "Contact",
+                                            label: "Contatti",
                                             href: "#contact"
                                         }
                                     ]
                                 },
                                 {
-                                    title: "Services",
+                                    title: "Metodo",
                                     items: [{
-                                            label: "Web Development",
+                                            label: "Cypher Engine",
                                             href: "#"
                                         },
                                         {
-                                            label: "SEO",
+                                            label: "Cypher OS",
                                             href: "#"
                                         },
                                         {
-                                            label: "Branding",
+                                            label: "Cypher Lab",
                                             href: "#"
                                         },
                                         {
@@ -1855,21 +1855,21 @@
                                     ]
                                 },
                                 {
-                                    title: "Connect",
+                                    title: "Social",
                                     items: [{
-                                            label: "Twitter",
+                                            label: "Email",
                                             href: "#"
                                         },
                                         {
-                                            label: "LinkedIn",
+                                            label: "Email",
                                             href: "#"
                                         },
                                         {
-                                            label: "Instagram",
+                                            label: "Email",
                                             href: "#"
                                         },
                                         {
-                                            label: "Dribbble",
+                                            label: " ",
                                             href: "#"
                                         }
                                     ]

@@ -5126,7 +5126,7 @@
         const Logo = ({
             logoSrc,
             logoAlt = "",
-            brandName = "Webild",
+            brandName = "cypher",
             className = "",
             imageClassName = "",
             textClassName = "",
@@ -5230,7 +5230,7 @@
             navItems,
             logoSrc,
             logoAlt = "",
-            brandName = "Webild",
+            brandName = "cypher",
             button,
             secondaryButton,
             animateOnLoad = true,
@@ -9189,7 +9189,7 @@
             logoSrc,
             logoAlt = "",
             logoText,
-            copyrightText = `© 2025 | Webild`,
+            copyrightText = `© 2025 | cypher`,
             socialLinks,
             ariaLabel = "Site footer",
             className = "",
@@ -9333,15 +9333,15 @@
                     id: "home"
                 },
                 {
-                    name: "Services",
+                    name: "Metodo",
                     id: "services"
                 },
                 {
-                    name: "Work",
+                    name: "Sistema",
                     id: "work"
                 },
                 {
-                    name: "Contact",
+                    name: "Contatti",
                     id: "contact"
                 }
             ];
@@ -9364,7 +9364,7 @@
                             navItems: navItems,
                             brandName: "Studio",
                             button: {
-                                text: "Get in Touch",
+                                text: "Contatti",
                                 href: "#contact"
                             }
                         }, void 0, false, {
@@ -9377,30 +9377,30 @@
                             background: {
                                 variant: "radial-gradient"
                             },
-                            tag: "Award-Winning Agency",
+                            tag: "Advanced Scaling System · Padova",
                             tagIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
-                            title: "We Build Digital Experiences",
-                            description: "Transform your brand with cutting-edge web design and development. We craft stunning websites that convert visitors into customers.",
+                            title: "Costruiamo sistemi di acquisizione clienti.",
+                            description: "Non vendiamo gestione di pubblicità. Strategia, advertising performance e AI in un unico sistema — con compenso legato alle vendite che generiamo.",
                             enableKpiAnimation: true,
                             kpis: [{
                                     value: "150+",
-                                    label: "Projects Delivered"
+                                    label: "Giorni Delivered"
                                 },
                                 {
                                     value: "98%",
-                                    label: "Client Satisfaction"
+                                    label: "Client Performance fee"
                                 },
                                 {
                                     value: "12+",
-                                    label: "Years Experience"
+                                    label: "Proprietà tua Experience"
                                 }
                             ],
                             buttons: [{
-                                    text: "Start Project",
+                                    text: "Prenota l'audit",
                                     href: "#contact"
                                 },
                                 {
-                                    text: "View Work",
+                                    text: "Vedi il metodo",
                                     href: "#work"
                                 }
                             ],
@@ -9487,7 +9487,7 @@
                                     href: "#process"
                                 },
                                 {
-                                    text: "Meet the Team",
+                                    text: "Chi c'è dietro",
                                     href: "#team"
                                 }
                             ],
@@ -9499,14 +9499,14 @@
                         }, this),
                         /*#__PURE__*/
                         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$feature$2f$FeatureCardNineteen$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            title: "Our Services",
+                            title: "Il sistema",
                             description: "A proven methodology that delivers results consistently across every project.",
                             tag: "What We Do",
                             tagIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
                             features: [{
                                     tag: "Service 01",
                                     title: "01",
-                                    subtitle: "Web Development",
+                                    subtitle: "Cypher Engine",
                                     description: "Your website should be more than functional—it should resonate. We craft bespoke digital experiences that merge innovation with creativity, delivering intuitive, visually stunning platforms that captivate audiences, reflect your brand's essence, and adapt to future opportunities.",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency/process/process1.webp",
                                     imageAlt: "Web development"
@@ -9559,13 +9559,13 @@
                                 {
                                     id: "projects",
                                     value: "500+",
-                                    title: "Projects",
+                                    title: "Giorni",
                                     description: "Websites and apps launched worldwide",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"]
                                 },
                                 {
                                     id: "performance",
-                                    value: "99%",
+                                    value: "5-10%",
                                     title: "Uptime",
                                     description: "Reliable performance for all our projects",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
@@ -9592,7 +9592,7 @@
                                     date: "CEO, TechStart",
                                     title: "Transformed Our Digital Presence",
                                     quote: "Working with Studio was a game-changer for our startup. They delivered a website that not only looks stunning but converts visitors into customers at twice our previous rate.",
-                                    tag: "Web Development",
+                                    tag: "Cypher Engine",
                                     avatarSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency/hero/hero2.webp",
                                     avatarAlt: "Sarah Johnson",
                                     imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency/hero/hero2.webp",
@@ -9749,12 +9749,12 @@
                             logoText: "Studio",
                             copyrightText: "© 2025 Studio. All rights reserved.",
                             socialLinks: [{
-                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"],
+                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Email"],
                                     href: "https://twitter.com",
                                     ariaLabel: "Follow us on Twitter"
                                 },
                                 {
-                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__["Instagram"],
+                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__["Email"],
                                     href: "https://instagram.com",
                                     ariaLabel: "Follow us on Instagram"
                                 },

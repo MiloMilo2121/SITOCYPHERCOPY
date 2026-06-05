@@ -1298,7 +1298,7 @@
         const Logo = ({
             logoSrc,
             logoAlt = "",
-            brandName = "Webild",
+            brandName = "cypher",
             className = "",
             imageClassName = "",
             textClassName = "",
@@ -1542,7 +1542,7 @@
             logoSrc,
             logoAlt = "",
             className = "",
-            brandName = "Webild",
+            brandName = "cypher",
             button,
             logoClassName = "",
             logoImageClassName = "",
